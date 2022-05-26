@@ -9,14 +9,14 @@
         TUBEPLAYER_CLASS = "jquery-youtube-tubeplayer",
         OPTS = "opts" + TUBEPLAYER;
 
-    //  
-    // TubePlayer package 
+    //
+    // TubePlayer package
     var TP = {
         inited: false,              // tubeplayer inited flag - for destroy/re-init
         ytplayers: {},              // all the instances that exist
         inits: [],                  // local init functions for multiple iframe players
         iframeScriptInited: false,  // no need to import the iframe script multiple times
-        State: { 
+        State: {
             'UNSTARTED': -1,
             'ENDED': 0,
             'PLAYING': 1,
@@ -44,7 +44,7 @@
      * the events can be overridden as they are public.
      *
      * There are several functions that serve as wrappers to be utilized
-     * internally - stateChange, onError, qualityChange, rateChange. 
+     * internally - stateChange, onError, qualityChange, rateChange.
      * Change them at your own risk.
      */
     $.tubeplayer.defaults = {
@@ -450,9 +450,9 @@
             p.ytplayer.cueVideoById(param, 0, p.opts.preferredQuality);
         }),
         cuePlaylist: wrap_fn(function(evt, param, p){
-            p.ytplayer.cuePlaylist(param.playlist, 
-                param.index || 0, 
-                param.startSeconds || 0, 
+            p.ytplayer.cuePlaylist(param.playlist,
+                param.index || 0,
+                param.startSeconds || 0,
                 p.opts.preferredQuality);
         }),
         play: wrap_fn(function(evt, param, p) {
@@ -467,9 +467,9 @@
             }
             if(videoId){
                 p.ytplayer.loadVideoById({
-                    videoId: videoId, 
+                    videoId: videoId,
                     startSeconds: startTime,
-                    suggestedQuality: p.opts.preferredQuality 
+                    suggestedQuality: p.opts.preferredQuality
                 });
             }
             else {
@@ -489,10 +489,10 @@
                 playlist = param;
                 startTime = 0;
                 playlistIndex = 0;
-            } 
+            }
             if(playlist){
-                p.ytplayer.loadPlaylist(playlist, playlistIndex, 
-                    startTime, 
+                p.ytplayer.loadPlaylist(playlist, playlistIndex,
+                    startTime,
                     p.opts.preferredQuality);
                 p.opts.onPlay(param);
             }
