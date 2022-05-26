@@ -326,7 +326,7 @@
                     'autoplay': (o.autoPlay ? 1 : 0),
                     'controls': (o.controls ? o.controls : 0),
                     'loop': (o.loop ? 1 : 0),
-                    'playlist': (o.playlist ? o.playlist : 0),
+                    // 'playlist': (o.playlist ? o.playlist : 0),
                     'rel': (o.showRelated ? 1 : 0),
                     'fs': (o.allowFullScreen ? 1 : 0),
                     'showinfo': (o.showinfo ? 1 : 0),
