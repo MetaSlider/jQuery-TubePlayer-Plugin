@@ -1,5 +1,13 @@
 # Changelog
 
+__v2.2.1 - May 26, 2022__
+
+* CHANGED: Commented the "playlist" param to fix metaslider/metaslider-pro#17.
+
+__v2.2.0 - May 26, 2022__
+
+* CHANGED: Update dependencies to fix error "ReferenceError: primordials is not defined" when this library is included.
+
 __v2.1.0 - Dec 2, 2016__
 
 * Exposed default settings `$.tubeplayer.defaults.settings`
@@ -16,7 +24,7 @@ __v2.0.0 - Dec 2, 2016__
 * Property `autoHide` has been deprecated and is no longer used
 * Property `theme` has been deprecated; players always use the dark theme
 * Improved security by adding `origin` (window.location.origin)
-* Revamped the test console + Updated tests to ensure successful execution 
+* Revamped the test console + Updated tests to ensure successful execution
 
 __v1.1.7 - Sept 24, 2013__
 
@@ -26,7 +34,7 @@ __v1.1.6 - May 2, 2013__
 
 * Updates to object returned by 'data' method
     * Added 'videoLoadedFraction' - bytesLoaded, bytesTotal and startBytes are technically deprecated.
-    * Added 'availablePlaybackRates' - array of available playback rates 
+    * Added 'availablePlaybackRates' - array of available playback rates
     * Changed 'getVideoEmbedCode' property -> 'videoEmbedCode'
 * Added a new method for iframe player: 'playbackRate'. Getter returns number. Setter applies to current video only. Video must support altering playbackRate in order to work. Check availablePlaybackRates in 'data'.
 * Added more unit tests including flag for testing functionality in HTML5 trial mode
