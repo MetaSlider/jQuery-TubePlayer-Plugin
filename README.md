@@ -46,7 +46,7 @@ $.tubeplayer.defaults.settings = {
     width: 480,                                     // the width of the player
     height: 270,                                    // the height of the player
     allowFullScreen: "true",                        // true by default, allow user to go full screen
-    initialVideo: "DkoeNLuMbcI",                    // the video that is loaded into the player
+    initialVideo: "zBFMhVjlGhs",                    // the video that is loaded into the player
     playlist: null,                                 // array of video id's if a playlist is desired
     start: 0, 
     preferredQuality: "default",                    // preferred quality: auto, small, medium, large, hd720
